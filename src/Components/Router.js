@@ -15,11 +15,24 @@ export default () => (
   <Router>
     <Nav />
     <Switch>
-      <Route path="/" exact component={Movie} />
-      <Route path="/tv" component={TV} />
-      <Route path="/search" component={Search} />
-      <Route path="/movie/:id" component={Detail} />
-      <Route path="/show/:id" component={Detail} />
+      <Route
+        path="https://dubbsong.github.io/clone_01/"
+        exact
+        component={Movie}
+      />
+      <Route path="https://dubbsong.github.io/clone_01/tv" component={TV} />
+      <Route
+        path="https://dubbsong.github.io/clone_01/search"
+        component={Search}
+      />
+      <Route
+        path="https://dubbsong.github.io/clone_01/movie/:id"
+        component={Detail}
+      />
+      <Route
+        path="https://dubbsong.github.io/clone_01/show/:id"
+        component={Detail}
+      />
       <Redirect from="*" to="/" />
     </Switch>
   </Router>
