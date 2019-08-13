@@ -5,6 +5,7 @@ import Section from 'Components/Section';
 import HPoster from 'Components/HPoster';
 import Loader from 'Components/Loader';
 import Footer from 'Components/Footer';
+import Message from 'Components/Message';
 
 const TVPresenter = ({
   loading,
@@ -71,6 +72,7 @@ const TVPresenter = ({
           ))}
         </Section>
       )}
+      {error && <Message text={error} color="#e50914" />}
       <Footer />
     </React.Fragment>
   );
