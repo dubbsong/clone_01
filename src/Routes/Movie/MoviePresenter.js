@@ -6,6 +6,7 @@ import HPoster from 'Components/HPoster';
 import Loader from 'Components/Loader';
 import Footer from 'Components/Footer';
 import Message from 'Components/Message';
+import Helmet from 'react-helmet';
 
 const MoviePresenter = ({
   loading,
@@ -19,6 +20,9 @@ const MoviePresenter = ({
     <Loader />
   ) : (
     <React.Fragment>
+      <Helmet>
+        <title>Movies | Notflix</title>
+      </Helmet>
       <MovieHeader />
       {trending && trending.length > 0 && (
         <Section title="Trending Movies">

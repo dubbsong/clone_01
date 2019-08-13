@@ -6,6 +6,7 @@ import HPoster from 'Components/HPoster';
 import Loader from 'Components/Loader';
 import Footer from 'Components/Footer';
 import Message from 'Components/Message';
+import Helmet from 'react-helmet';
 
 const TVPresenter = ({
   loading,
@@ -19,6 +20,9 @@ const TVPresenter = ({
     <Loader />
   ) : (
     <React.Fragment>
+      <Helmet>
+        <title>TV | Notflix</title>
+      </Helmet>
       <TVHeader />
       {trending && trending.length > 0 && (
         <Section title="Trending TV Shows">
