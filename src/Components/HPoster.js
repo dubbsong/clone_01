@@ -41,7 +41,7 @@ const ImageContainer = styled.div`
 
   &:hover {
     transform: scale(var(--horizontal_scale));
-    margin: 0 10px;
+    margin: 0 25px;
 
     ${Image} {
       opacity: 0.4;
