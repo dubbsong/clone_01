@@ -14,6 +14,7 @@
 - [] Each Detail
 
 ## Structure
+```
 src
   ├─ Components
   │   ├─ App.js
@@ -45,3 +46,4 @@ src
   │       └─ DetailPresenter.js
   ├─ api.js
   └─ index.js
+  ```
