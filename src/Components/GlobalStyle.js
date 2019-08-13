@@ -19,6 +19,15 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+
+  :root {
+    --horizontal_width: 250px;
+    --horizontal_height: calc(var(--horizontal_width) / (16 / 9));
+    --horizontal_scale: 1.2;
+    --vertical_width: 180px;
+    --vertical_height: calc(var(--vertical_width) / (2 / 3));
+    --vertical_scale: 1.1;
+  }
 `;
 
 export default GlobalStyle;
