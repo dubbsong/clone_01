@@ -12,6 +12,16 @@ export default class extends React.Component {
   };
 
   // Logic
+  updateWord = event => {
+    const {
+      target: { value }
+    } = event;
+
+    this.setState({
+      searchWord: value
+    });
+  };
+
   searchByWord = async () => {
     try {
       const {
@@ -33,7 +43,9 @@ export default class extends React.Component {
     }
   };
 
-  handleSubmit = () => {
+  handleSubmit = event => {
+    event.preventDefault();
+
     if (this.state.searchWord !== '') {
       this.searchByWord();
     }
@@ -48,6 +60,7 @@ export default class extends React.Component {
         tvResults={this.state.tvResults}
         error={this.state.error}
         handleSubmit={this.handleSubmit}
+        updateWord={this.updateWord}
       />
     );
   }
