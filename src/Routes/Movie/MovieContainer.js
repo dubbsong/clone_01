@@ -1,5 +1,6 @@
 import React from 'react';
 import MoviePresenter from './MoviePresenter';
+import { movieApi } from 'api';
 
 export default class extends React.Component {
   state = {
@@ -12,6 +13,36 @@ export default class extends React.Component {
   };
 
   // Logic
+  async componentDidMount() {
+    try {
+      const {
+        data: { results: trending }
+      } = await movieApi.trending();
+
+      const {
+        data: { results: nowPlaying }
+      } = await movieApi.nowPlaying();
+
+      const {
+        data: { results: topRated }
+      } = await movieApi.topRated();
+
+      const {
+        data: { results: upcoming }
+      } = await movieApi.upcoming();
+
+      this.setState({
+        trending: trending,
+        nowPlaying: nowPlaying,
+        topRated: topRated,
+        upcoming: upcoming
+      });
+    } catch {
+      this.setState({ error: "Can't find movie information." });
+    } finally {
+      this.setState({ loading: false });
+    }
+  }
 
   render() {
     return (
