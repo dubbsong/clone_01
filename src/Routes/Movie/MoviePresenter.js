@@ -3,6 +3,7 @@ import MovieHeader from 'Components/MovieHeader';
 import PropTypes from 'prop-types';
 import Section from 'Components/Section';
 import HPoster from 'Components/HPoster';
+import Loader from 'Components/Loader';
 
 const MoviePresenter = ({
   loading,
@@ -12,7 +13,9 @@ const MoviePresenter = ({
   upcoming,
   error
 }) =>
-  loading ? null : (
+  loading ? (
+    <Loader />
+  ) : (
     <React.Fragment>
       <MovieHeader />
       {trending && trending.length > 0 && (

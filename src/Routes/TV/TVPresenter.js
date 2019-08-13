@@ -3,6 +3,7 @@ import TVHeader from 'Components/TVHeader';
 import PropTypes from 'prop-types';
 import Section from 'Components/Section';
 import HPoster from 'Components/HPoster';
+import Loader from 'Components/Loader';
 
 const TVPresenter = ({
   loading,
@@ -12,7 +13,9 @@ const TVPresenter = ({
   topRated,
   error
 }) =>
-  loading ? null : (
+  loading ? (
+    <Loader />
+  ) : (
     <React.Fragment>
       <TVHeader />
       {trending && trending.length > 0 && (
