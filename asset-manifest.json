@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/clone_01/static/js/main.670f6445.chunk.js",
+    "main.js.map": "/clone_01/static/js/main.670f6445.chunk.js.map",
+    "runtime~main.js": "/clone_01/static/js/runtime~main.d5dc636b.js",
+    "runtime~main.js.map": "/clone_01/static/js/runtime~main.d5dc636b.js.map",
+    "static/js/2.77a81728.chunk.js": "/clone_01/static/js/2.77a81728.chunk.js",
+    "static/js/2.77a81728.chunk.js.map": "/clone_01/static/js/2.77a81728.chunk.js.map",
+    "index.html": "/clone_01/index.html",
+    "precache-manifest.86e416de200c7ff634f2a23d3070c621.js": "/clone_01/precache-manifest.86e416de200c7ff634f2a23d3070c621.js",
+    "service-worker.js": "/clone_01/service-worker.js",
+    "static/media/bg_movie.webp": "/clone_01/static/media/bg_movie.f15e2eda.webp",
+    "static/media/bg_tv.webp": "/clone_01/static/media/bg_tv.bd8ecc9b.webp",
+    "static/media/logo.png": "/clone_01/static/media/logo.854b40f2.png",
+    "static/media/logo_sm.png": "/clone_01/static/media/logo_sm.41b45fdc.png"
+  }
+}
